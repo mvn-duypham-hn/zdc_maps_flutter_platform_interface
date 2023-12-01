@@ -69,7 +69,7 @@ class MethodChannelZdcMapsFlutter extends ZdcMapsFlutterPlatform {
   MethodChannel ensureChannelInitialized(int mapId) {
     MethodChannel? channel = _channels[mapId];
     if (channel == null) {
-      channel = MethodChannel('plugins.flutter.io/google_maps_$mapId');
+      channel = MethodChannel('vn.duypx/zdc_maps_$mapId');
       channel.setMethodCallHandler(
           (MethodCall call) => _handleMethodCall(call, mapId));
       _channels[mapId] = channel;

@@ -141,7 +141,7 @@ class Marker implements MapsObject<Marker> {
   const Marker({
     required this.markerId,
     this.alpha = 1.0,
-    this.anchor = const Offset(0.5, 1.0),
+    this.anchor = const Offset(0.0, 0.0),
     this.consumeTapEvents = false,
     this.draggable = false,
     this.flat = false,
